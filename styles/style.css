@@ -1,9 +1,15 @@
 
+
 /*index popoki digital*/
 
 /*League Spartan Font*/
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 /*font-family: "League Spartan", sans-serif;*/
+
+*/{
+    margin: 0;
+    padding:0;
+}
 
 
 body {
@@ -11,7 +17,22 @@ body {
     font-family: "League Spartan", sans-serif;
     
 }
+/*Navbar*/
+nav {
+    padding: 24px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 16px;
+}
 /*Estilos Nav*/
 .nav-li {
     list-style-type: none;
@@ -23,30 +44,83 @@ body {
     
 }
     
-/*Estilos H1, H2, H3*/ 
+/*Estilos H1, H2, H3 y párrafos*/ 
 h1 {
     color: #961da9;
-    font-size: 4em;
-    font-family: "League Spartan", sans-serif;
+    font-size: 4rem;
     font-weight: 700;
+    padding: 24px;
 }
 
 h2 {
     color: #dc3886;
-    font-size: 2em;
-    font-family: "League Spartan", sans-serif;
+    font-size: 2rem;
+    padding: 24px;
+    
 
 }
 
 h3 {
     color: #ff8c4d;
-    font-size: 2em;
-    font-family: "League Spartan", sans-serif;
+    font-size: 2rem;
+    padding: 24px;
+}
 
+p {
+    color: #000000;
+    font-size: 1.25rem;
+    padding: 24px;
+}
+
+.servicios-lista {
+    font-size: 1.25rem;
+    padding: 24px;
+}
+
+/*Estilos Banner y presentación*/
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+}
+
+.presentación {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    margin: 30px;
 }
 
 /*footer estilo*/
 .footer-parrafo {
-    font-size: 1em;
+    font-size: 1.25rem;
+    color: #961da9;
+    
+}
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 8px;
+    font-size: 1.25rem;
+}
+
+.footer-nav a {
+    text-decoration: none;
     color: #961da9;
 }
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: start;
+    padding: 24px;
+} 
