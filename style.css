@@ -1,0 +1,347 @@
+
+
+/*index popoki digital*/
+
+/*League Spartan Font*/
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+/*font-family: "League Spartan", sans-serif;*/
+
+*/{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-image: url("../assets/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "League Spartan", sans-serif;
+    
+}
+/*Navbar*/
+nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "logo"
+        "nav";
+    justify-items: center;
+    gap: 20px;
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+.logo {
+    grid-area: logo;
+    margin: 0;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+/*Estilos Nav*/
+.nav-li {
+    list-style-type: none;
+}
+
+.nav-li a {
+    text-decoration: none;
+    color: #961da9;
+    
+}
+    
+/*Estilos H1, H2, H3 y párrafos*/ 
+h1 {
+    color: #961da9;
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 24px;
+}
+
+h2 {
+    color: #dc3886;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #ff8c4d;
+    font-size: 2rem;
+    padding: 24px;
+}
+
+p {
+    color: #000000;
+    font-size: 1.25rem;
+    padding: 24px;
+}
+
+.servicios-lista {
+    font-size: 1.25rem;
+    padding: 24px;
+}
+
+/*Estilos Banner y presentación*/
+.banner {
+    width: 100%;
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0; 
+}
+
+.presentación {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "texto" 
+        "imagen";
+    text-align: left;
+    align-items: center;
+    margin: 30px;
+    padding: 24px;
+}
+
+ .presentación h2 {
+    grid-area: texto;
+}
+
+ .presentación img {
+    grid-area: imagen;
+}
+
+/*Estilos Servicios*/
+.servicios h3 {
+    align-items: center;
+    text-align: center;
+}
+.servicio1 {
+    grid-area: storytelling;
+}
+.servicio2 {    
+    grid-area: estrategia;
+}       
+.servicio3 {
+    grid-area: diseño;
+}
+.servicio4 {
+    grid-area: desarrollo;
+}
+
+.foto-servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "storytelling estrategia" 
+        "diseño desarrollo";
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+.foto-servicios img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    justify-self: center;
+}
+
+
+/*footer estilo*/
+.footer {
+    background-color:#961da9;   
+}
+
+.footer img {
+    width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-parrafo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #ffffff;
+    
+}
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "logo"
+        "footer-nav"
+        "footer-parrafo";
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    padding: 20px 10px;
+    min-height: 300px;
+    margin-top: 50px;
+}
+
+.footer img {
+    grid-area: logo;
+}
+
+.footer-nav {
+    grid-area: footer-nav;
+}
+.footer-parrafo {
+    grid-area: footer-parrafo;
+}
+
+
+/*page servicios*/
+.page-servicios h1 {
+    text-align: center;
+}
+.page-servicios p {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.page-servicios h3 {
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+        "item1"
+        "foto1"
+        "item2"
+        "foto2"
+        "item3"
+        "foto3"
+        "item4"
+        "foto4";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+        
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+}
+
+.foto1 {
+    grid-area: foto1;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.foto3 {
+    grid-area: foto3;
+}
+
+.foto4 {
+    grid-area: foto4;
+}
+
+.grid-servicios img {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+
+
+
+/*mobile queries*/
+@media (min-width: 1024px) {
+    nav {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            "logo nav";
+        justify-items: center;
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1024px) {
+    .logo img {
+        width: 150px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .presentación {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "texto imagen";
+    }
+}
+
+@media (min-width:1024px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "logo footer-nav footer-parrafo";
+    }
+}
